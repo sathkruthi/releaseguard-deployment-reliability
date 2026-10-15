@@ -1,0 +1,12 @@
+{
+  "environment": "production",
+  "context": "kind-releaseguard",
+  "namespace": "releaseguard-demo",
+  "release": "releaseguard-demo",
+  "policy": {
+    "rollout_seconds": 35,
+    "minimum_requests": 30,
+    "maximum_error_rate": 0.05,
+    "maximum_p95_seconds": 0.5
+  }
+}
