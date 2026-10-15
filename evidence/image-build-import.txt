@@ -1,0 +1,121 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   7.68kB
+
+Step 1/11 : FROM golang:1.27.2-alpine AS build
+ ---> f92b6ef800e4
+Step 2/11 : WORKDIR /src
+ ---> Using cache
+ ---> 4e5730a1f7bf
+Step 3/11 : COPY go.mod main.go ./
+ ---> Using cache
+ ---> 1eaf35d5fdfa
+Step 4/11 : ARG REVISION=v1
+ ---> Using cache
+ ---> ba803058657d
+Step 5/11 : ARG MODE=healthy
+ ---> Using cache
+ ---> 6804408d8545
+Step 6/11 : RUN CGO_ENABLED=0 go build -trimpath -ldflags "-X main.revision=${REVISION} -X main.defaultMode=${MODE}" -o /out/sample .
+ ---> Using cache
+ ---> 08f63eb58ac7
+Step 7/11 : FROM alpine:3.23
+ ---> 85fe1e81d675
+Step 8/11 : RUN adduser -D -u 10001 app
+ ---> Using cache
+ ---> 5f64c1c2b6c8
+Step 9/11 : COPY --from=build /out/sample /usr/local/bin/sample
+ ---> Using cache
+ ---> f45c55803144
+Step 10/11 : USER app
+ ---> Using cache
+ ---> 66f946022a3c
+Step 11/11 : ENTRYPOINT ["sample"]
+ ---> Using cache
+ ---> b187632cf928
+Successfully built b187632cf928
+Successfully tagged releaseguard-sample:v1
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   7.68kB
+
+Step 1/11 : FROM golang:1.27.2-alpine AS build
+ ---> f92b6ef800e4
+Step 2/11 : WORKDIR /src
+ ---> Using cache
+ ---> 4e5730a1f7bf
+Step 3/11 : COPY go.mod main.go ./
+ ---> Using cache
+ ---> 1eaf35d5fdfa
+Step 4/11 : ARG REVISION=v1
+ ---> Using cache
+ ---> ba803058657d
+Step 5/11 : ARG MODE=healthy
+ ---> Using cache
+ ---> 6804408d8545
+Step 6/11 : RUN CGO_ENABLED=0 go build -trimpath -ldflags "-X main.revision=${REVISION} -X main.defaultMode=${MODE}" -o /out/sample .
+ ---> Using cache
+ ---> ca96a4de7500
+Step 7/11 : FROM alpine:3.23
+ ---> 85fe1e81d675
+Step 8/11 : RUN adduser -D -u 10001 app
+ ---> Using cache
+ ---> 5f64c1c2b6c8
+Step 9/11 : COPY --from=build /out/sample /usr/local/bin/sample
+ ---> Using cache
+ ---> 930e8fb0feab
+Step 10/11 : USER app
+ ---> Using cache
+ ---> 8468511147ee
+Step 11/11 : ENTRYPOINT ["sample"]
+ ---> Using cache
+ ---> 7257a1c1562c
+Successfully built 7257a1c1562c
+Successfully tagged releaseguard-sample:v2
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   7.68kB
+
+Step 1/11 : FROM golang:1.27.2-alpine AS build
+ ---> f92b6ef800e4
+Step 2/11 : WORKDIR /src
+ ---> Using cache
+ ---> 4e5730a1f7bf
+Step 3/11 : COPY go.mod main.go ./
+ ---> Using cache
+ ---> 1eaf35d5fdfa
+Step 4/11 : ARG REVISION=v1
+ ---> Using cache
+ ---> ba803058657d
+Step 5/11 : ARG MODE=healthy
+ ---> Using cache
+ ---> 6804408d8545
+Step 6/11 : RUN CGO_ENABLED=0 go build -trimpath -ldflags "-X main.revision=${REVISION} -X main.defaultMode=${MODE}" -o /out/sample .
+ ---> Using cache
+ ---> b3bfc7fa8e9f
+Step 7/11 : FROM alpine:3.23
+ ---> 85fe1e81d675
+Step 8/11 : RUN adduser -D -u 10001 app
+ ---> Using cache
+ ---> 5f64c1c2b6c8
+Step 9/11 : COPY --from=build /out/sample /usr/local/bin/sample
+ ---> Using cache
+ ---> 8fb5cbcab4ea
+Step 10/11 : USER app
+ ---> Using cache
+ ---> 0c53be9adb34
+Step 11/11 : ENTRYPOINT ["sample"]
+ ---> Using cache
+ ---> e2da79fad28f
+Successfully built e2da79fad28f
+Successfully tagged releaseguard-sample:v3
+v3.15.0: Pulling from prom/prometheus
+Digest: sha256:efd719c99d83b060d9daefdcf00360461adf279f45ef5391f8d111892118753e
+Status: Image is up to date for prom/prometheus:v3.15.0
+docker.io/prom/prometheus:v3.15.0
