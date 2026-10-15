@@ -2,7 +2,8 @@ DEPRECATED: The legacy builder is deprecated and will be removed in a future rel
             Install the buildx component to build images with BuildKit:
             https://docs.docker.com/go/buildx/
 
-Sending build context to Docker daemon   7.68kB
+Sending build context to Docker daemon   7.68kB
+
 Step 1/11 : FROM golang:1.27.2-alpine AS build
  ---> f92b6ef800e4
 Step 2/11 : WORKDIR /src
@@ -40,7 +41,8 @@ DEPRECATED: The legacy builder is deprecated and will be removed in a future rel
             Install the buildx component to build images with BuildKit:
             https://docs.docker.com/go/buildx/
 
-Sending build context to Docker daemon   7.68kB
+Sending build context to Docker daemon   7.68kB
+
 Step 1/11 : FROM golang:1.27.2-alpine AS build
  ---> f92b6ef800e4
 Step 2/11 : WORKDIR /src
@@ -78,7 +80,8 @@ DEPRECATED: The legacy builder is deprecated and will be removed in a future rel
             Install the buildx component to build images with BuildKit:
             https://docs.docker.com/go/buildx/
 
-Sending build context to Docker daemon   7.68kB
+Sending build context to Docker daemon   7.68kB
+
 Step 1/11 : FROM golang:1.27.2-alpine AS build
  ---> f92b6ef800e4
 Step 2/11 : WORKDIR /src
