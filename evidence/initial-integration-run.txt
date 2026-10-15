@@ -1,0 +1,13 @@
+bootstrap: bootstrapped
+healthy: healthy
+incident001: rejected_configuration
+incident002: recovered
+incident003: degraded_external_dependency
+dependency-recovered: unattributed_degradation
+Traceback (most recent call last):
+  File "/home/vishnu/Documents/Codex/2026-10-14/te/outputs/releaseguard-deployment-reliability/scripts/integration.py", line 57, in <module>
+    record("dependency-recovered", controller.assess(baseline), "healthy")
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishnu/Documents/Codex/2026-10-14/te/outputs/releaseguard-deployment-reliability/scripts/integration.py", line 23, in record
+    raise AssertionError(name + ": expected " + expected + ", see " + str(output))
+AssertionError: dependency-recovered: expected healthy, see .local/integration

@@ -1,0 +1,14 @@
+{
+  "scenarios": {
+    "bootstrap": "bootstrapped",
+    "dependency-recovered": "healthy",
+    "drift-detected": "drift",
+    "drift-restored": "in_sync",
+    "healthy": "healthy",
+    "incident001": "rejected_configuration",
+    "incident002": "recovered",
+    "incident003": "degraded_external_dependency",
+    "latency-regression": "recovered"
+  },
+  "state": "passed"
+}

@@ -1,6 +1,6 @@
 # ReleaseGuard design
 
-Status: pre-implementation design. No implementation or verification is claimed yet.
+Status: implemented and locally verified on 2026-10-15. See `evidence/` for actual runs; private CI verification follows before publication.
 
 ## Problem and minimum complete release
 
@@ -14,7 +14,7 @@ The app and dependency are separate deployments; rolling back the app does not m
 
 ## Configuration and contracts
 
-JSON and YAML share one strict schema. Required: environment, exact local context, namespace/release, approved local URLs, rollout deadline, observation duration, minimum samples, maximum error rate, and latency threshold. Unknown properties and invalid numeric types/bounds are rejected before a command can mutate the cluster.
+JSON and YAML share one strict schema. Required: environment, exact local context, namespace/release, rollout deadline, minimum samples, maximum error rate, and latency threshold. Endpoints and the one-second scrape interval are fixed for this local sample. Traffic observation generates the minimum sample count plus five requests, with bounded HTTP timeouts. Unknown properties and invalid numeric types/bounds are rejected before a command can mutate the cluster.
 
 Manifest inspection checks deployment identity, replica bounds, image policy, non-root/read-only security settings, CPU/memory requests and limits, HTTP probes, and prohibited host access. Production-profile validation requires at least two replicas and image digests; it is a policy exercise on local data, never authorization for a remote deployment.
 

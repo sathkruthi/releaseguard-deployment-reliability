@@ -1,0 +1,15 @@
+test_incident003_dependency_does_not_rollback (test_policy.DecisionTests.test_incident003_dependency_does_not_rollback) ... FAIL
+
+======================================================================
+FAIL: test_incident003_dependency_does_not_rollback (test_policy.DecisionTests.test_incident003_dependency_does_not_rollback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vishnu/Documents/Codex/2026-10-14/te/outputs/releaseguard-deployment-reliability/tests/test_policy.py", line 43, in test_incident003_dependency_does_not_rollback
+    self.assertFalse(rollback, "dependency outage incorrectly triggered app rollback")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : dependency outage incorrectly triggered app rollback
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

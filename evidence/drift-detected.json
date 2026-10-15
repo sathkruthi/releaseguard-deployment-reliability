@@ -1,0 +1,10 @@
+{
+  "differences": [
+    {
+      "actual": 2,
+      "expected": 1,
+      "path": "/replicas"
+    }
+  ],
+  "state": "drift"
+}

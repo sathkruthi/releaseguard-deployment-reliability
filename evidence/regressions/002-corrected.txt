@@ -1,0 +1,6 @@
+test_command_success_does_not_prove_recovery (test_controller.RecoveryTests.test_command_success_does_not_prove_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.012s
+
+OK

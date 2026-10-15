@@ -1,0 +1,161 @@
+{
+  "baseline_error": null,
+  "decision": {
+    "reason": "availability and observed traffic meet policy",
+    "rollback": false,
+    "state": "healthy"
+  },
+  "deployment_fingerprint": "480226dbb9bcb0f94235b84b54f44f47c83d40def32e7c96fdbf0f583f19bc70",
+  "evidence": {
+    "baseline_healthy": true,
+    "candidate_ready": true,
+    "changed": false,
+    "counter_reset": false,
+    "dependency_healthy": true,
+    "error_rate": 0.0,
+    "metrics_available": true,
+    "p95_seconds": 0.005,
+    "requests": 35.0,
+    "rollout_ready": true
+  },
+  "helm_revision": 9,
+  "identity": {
+    "container": "releaseguard-control-plane",
+    "container_id": "3a832f135db3dcc652a232efc5ce8f36a5edc404813bf27c204188eda4b25fb6",
+    "context": "kind-releaseguard",
+    "server": "https://127.0.0.1:40497"
+  },
+  "image_revision": "v1",
+  "observation": {
+    "after": {
+      "at": 1792057328.4417188,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 525.0,
+        "10.244.0.7:8080|0.005": 519.0,
+        "10.244.0.7:8080|0.01": 519.0,
+        "10.244.0.7:8080|0.025": 519.0,
+        "10.244.0.7:8080|0.05": 519.0,
+        "10.244.0.7:8080|0.1": 519.0,
+        "10.244.0.7:8080|0.25": 519.0,
+        "10.244.0.7:8080|0.5": 519.0,
+        "10.244.0.7:8080|1": 525.0,
+        "10.244.0.7:8080|2": 525.0,
+        "10.244.0.7:8080|5": 525.0
+      },
+      "buckets": {
+        "+Inf": 525.0,
+        "0.005": 519.0,
+        "0.01": 519.0,
+        "0.025": 519.0,
+        "0.05": 519.0,
+        "0.1": 519.0,
+        "0.25": 519.0,
+        "0.5": 519.0,
+        "1": 525.0,
+        "2": 525.0,
+        "5": 525.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 72.0,
+        "revision": 0.0,
+        "success": 453.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 72.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 453.0
+      }
+    },
+    "before": {
+      "at": 1792057324.9993348,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 490.0,
+        "10.244.0.7:8080|0.005": 484.0,
+        "10.244.0.7:8080|0.01": 484.0,
+        "10.244.0.7:8080|0.025": 484.0,
+        "10.244.0.7:8080|0.05": 484.0,
+        "10.244.0.7:8080|0.1": 484.0,
+        "10.244.0.7:8080|0.25": 484.0,
+        "10.244.0.7:8080|0.5": 484.0,
+        "10.244.0.7:8080|1": 490.0,
+        "10.244.0.7:8080|2": 490.0,
+        "10.244.0.7:8080|5": 490.0
+      },
+      "buckets": {
+        "+Inf": 490.0,
+        "0.005": 484.0,
+        "0.01": 484.0,
+        "0.025": 484.0,
+        "0.05": 484.0,
+        "0.1": 484.0,
+        "0.25": 484.0,
+        "0.5": 484.0,
+        "1": 490.0,
+        "2": 490.0,
+        "5": 490.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 72.0,
+        "revision": 0.0,
+        "success": 418.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 72.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 418.0
+      }
+    },
+    "delta": {
+      "counter_reset": false,
+      "error_rate": 0.0,
+      "outcomes": {
+        "dependency": 0.0,
+        "revision": 0.0,
+        "success": 35.0
+      },
+      "p95_seconds": 0.005,
+      "requests": 35.0
+    },
+    "responses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "state": "healthy",
+  "telemetry_error": null
+}

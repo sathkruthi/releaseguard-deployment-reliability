@@ -1,0 +1,39 @@
+name: verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: sample/go.mod
+      - run: bash scripts/tools.sh
+      - run: echo "$PWD/.local/bin" >> "$GITHUB_PATH"
+      - run: make setup test lint audit
+      - run: PYTHONPATH=. .venv/bin/python scripts/regressions.py
+      - run: cd sample && go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+      - run: make cluster images
+      - run: make integration
+      - if: always()
+        run: |
+          if test -f .local/kubeconfig; then
+            .local/bin/kubectl --kubeconfig .local/kubeconfig --context kind-releaseguard --namespace releaseguard-demo get pods
+          fi
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: local-incident-reports
+          path: |
+            .local/integration/*.json
+            .local/regressions/*.txt
+          if-no-files-found: ignore

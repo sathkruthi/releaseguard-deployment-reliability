@@ -1,0 +1,9 @@
+{
+  "identity": {
+    "container": "releaseguard-control-plane",
+    "container_id": "3a832f135db3dcc652a232efc5ce8f36a5edc404813bf27c204188eda4b25fb6",
+    "context": "kind-releaseguard",
+    "server": "https://127.0.0.1:40497"
+  },
+  "state": "bootstrapped"
+}

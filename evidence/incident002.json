@@ -1,0 +1,280 @@
+{
+  "baseline_error": null,
+  "candidate": "v2",
+  "decision": {
+    "reason": "changed candidate fails readiness",
+    "rollback": true,
+    "state": "rollback_eligible"
+  },
+  "evidence": {
+    "baseline_healthy": true,
+    "candidate_ready": false,
+    "changed": true,
+    "counter_reset": false,
+    "dependency_healthy": true,
+    "error_rate": 0,
+    "metrics_available": true,
+    "p95_seconds": 0.0,
+    "requests": 0.0,
+    "rollout_ready": false
+  },
+  "helm_revision": 8,
+  "identity": {
+    "container": "releaseguard-control-plane",
+    "container_id": "3a832f135db3dcc652a232efc5ce8f36a5edc404813bf27c204188eda4b25fb6",
+    "context": "kind-releaseguard",
+    "server": "https://127.0.0.1:40497"
+  },
+  "image_revision": "v2",
+  "observation": {
+    "after": {
+      "at": 1792057306.3734884,
+      "bucket_series": {
+        "10.244.0.12:8080|+Inf": 0.0,
+        "10.244.0.12:8080|0.005": 0.0,
+        "10.244.0.12:8080|0.01": 0.0,
+        "10.244.0.12:8080|0.025": 0.0,
+        "10.244.0.12:8080|0.05": 0.0,
+        "10.244.0.12:8080|0.1": 0.0,
+        "10.244.0.12:8080|0.25": 0.0,
+        "10.244.0.12:8080|0.5": 0.0,
+        "10.244.0.12:8080|1": 0.0,
+        "10.244.0.12:8080|2": 0.0,
+        "10.244.0.12:8080|5": 0.0
+      },
+      "buckets": {
+        "+Inf": 0.0,
+        "0.005": 0.0,
+        "0.01": 0.0,
+        "0.025": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 0.0
+      },
+      "ready": false,
+      "requests": {
+        "dependency": 0.0,
+        "revision": 0.0,
+        "success": 0.0
+      },
+      "series": {
+        "10.244.0.12:8080|dependency": 0.0,
+        "10.244.0.12:8080|revision": 0.0,
+        "10.244.0.12:8080|success": 0.0
+      }
+    },
+    "before": {
+      "at": 1792057306.3734884,
+      "bucket_series": {
+        "10.244.0.12:8080|+Inf": 0.0,
+        "10.244.0.12:8080|0.005": 0.0,
+        "10.244.0.12:8080|0.01": 0.0,
+        "10.244.0.12:8080|0.025": 0.0,
+        "10.244.0.12:8080|0.05": 0.0,
+        "10.244.0.12:8080|0.1": 0.0,
+        "10.244.0.12:8080|0.25": 0.0,
+        "10.244.0.12:8080|0.5": 0.0,
+        "10.244.0.12:8080|1": 0.0,
+        "10.244.0.12:8080|2": 0.0,
+        "10.244.0.12:8080|5": 0.0
+      },
+      "buckets": {
+        "+Inf": 0.0,
+        "0.005": 0.0,
+        "0.01": 0.0,
+        "0.025": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "5": 0.0
+      },
+      "ready": false,
+      "requests": {
+        "dependency": 0.0,
+        "revision": 0.0,
+        "success": 0.0
+      },
+      "series": {
+        "10.244.0.12:8080|dependency": 0.0,
+        "10.244.0.12:8080|revision": 0.0,
+        "10.244.0.12:8080|success": 0.0
+      }
+    },
+    "delta": {
+      "counter_reset": false,
+      "error_rate": 0,
+      "outcomes": {
+        "dependency": 0.0,
+        "revision": 0.0,
+        "success": 0.0
+      },
+      "p95_seconds": 0.0,
+      "requests": 0.0
+    },
+    "responses": []
+  },
+  "recovery": {
+    "baseline_error": null,
+    "decision": {
+      "reason": "availability and observed traffic meet policy",
+      "rollback": false,
+      "state": "healthy"
+    },
+    "evidence": {
+      "baseline_healthy": true,
+      "candidate_ready": true,
+      "changed": false,
+      "counter_reset": false,
+      "dependency_healthy": true,
+      "error_rate": 0.0,
+      "metrics_available": true,
+      "p95_seconds": 0.005,
+      "requests": 35.0,
+      "rollout_ready": true
+    },
+    "image_revision": "v1",
+    "observation": {
+      "after": {
+        "at": 1792057313.822622,
+        "bucket_series": {
+          "10.244.0.7:8080|+Inf": 420.0,
+          "10.244.0.7:8080|0.005": 416.0,
+          "10.244.0.7:8080|0.01": 416.0,
+          "10.244.0.7:8080|0.025": 416.0,
+          "10.244.0.7:8080|0.05": 416.0,
+          "10.244.0.7:8080|0.1": 416.0,
+          "10.244.0.7:8080|0.25": 416.0,
+          "10.244.0.7:8080|0.5": 416.0,
+          "10.244.0.7:8080|1": 420.0,
+          "10.244.0.7:8080|2": 420.0,
+          "10.244.0.7:8080|5": 420.0
+        },
+        "buckets": {
+          "+Inf": 420.0,
+          "0.005": 416.0,
+          "0.01": 416.0,
+          "0.025": 416.0,
+          "0.05": 416.0,
+          "0.1": 416.0,
+          "0.25": 416.0,
+          "0.5": 416.0,
+          "1": 420.0,
+          "2": 420.0,
+          "5": 420.0
+        },
+        "ready": true,
+        "requests": {
+          "dependency": 37.0,
+          "revision": 0.0,
+          "success": 383.0
+        },
+        "series": {
+          "10.244.0.7:8080|dependency": 37.0,
+          "10.244.0.7:8080|revision": 0.0,
+          "10.244.0.7:8080|success": 383.0
+        }
+      },
+      "before": {
+        "at": 1792057310.3664584,
+        "bucket_series": {
+          "10.244.0.7:8080|+Inf": 385.0,
+          "10.244.0.7:8080|0.005": 381.0,
+          "10.244.0.7:8080|0.01": 381.0,
+          "10.244.0.7:8080|0.025": 381.0,
+          "10.244.0.7:8080|0.05": 381.0,
+          "10.244.0.7:8080|0.1": 381.0,
+          "10.244.0.7:8080|0.25": 381.0,
+          "10.244.0.7:8080|0.5": 381.0,
+          "10.244.0.7:8080|1": 385.0,
+          "10.244.0.7:8080|2": 385.0,
+          "10.244.0.7:8080|5": 385.0
+        },
+        "buckets": {
+          "+Inf": 385.0,
+          "0.005": 381.0,
+          "0.01": 381.0,
+          "0.025": 381.0,
+          "0.05": 381.0,
+          "0.1": 381.0,
+          "0.25": 381.0,
+          "0.5": 381.0,
+          "1": 385.0,
+          "2": 385.0,
+          "5": 385.0
+        },
+        "ready": true,
+        "requests": {
+          "dependency": 37.0,
+          "revision": 0.0,
+          "success": 348.0
+        },
+        "series": {
+          "10.244.0.7:8080|dependency": 37.0,
+          "10.244.0.7:8080|revision": 0.0,
+          "10.244.0.7:8080|success": 348.0
+        }
+      },
+      "delta": {
+        "counter_reset": false,
+        "error_rate": 0.0,
+        "outcomes": {
+          "dependency": 0.0,
+          "revision": 0.0,
+          "success": 35.0
+        },
+        "p95_seconds": 0.005,
+        "requests": 35.0
+      },
+      "responses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    "telemetry_error": null
+  },
+  "restored_template": true,
+  "rollback_attempted": true,
+  "rollback_performed": true,
+  "state": "recovered",
+  "telemetry_error": null
+}

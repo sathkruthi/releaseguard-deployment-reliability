@@ -1,0 +1,15 @@
+test_incident001_unsafe_production_manifest (test_config.ConfigTests.test_incident001_unsafe_production_manifest) ... FAIL
+
+======================================================================
+FAIL: test_incident001_unsafe_production_manifest (test_config.ConfigTests.test_incident001_unsafe_production_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vishnu/Documents/Codex/2026-10-14/te/outputs/releaseguard-deployment-reliability/tests/test_config.py", line 70, in test_incident001_unsafe_production_manifest
+    self.assertTrue(errors, "unsafe production manifest was accepted")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true : unsafe production manifest was accepted
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+FAILED (failures=1)

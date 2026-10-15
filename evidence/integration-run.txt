@@ -1,0 +1,9 @@
+bootstrap: bootstrapped
+healthy: healthy
+incident001: rejected_configuration
+incident002: recovered
+incident003: degraded_external_dependency
+dependency-recovered: healthy
+latency-regression: recovered
+drift-detected: drift
+drift-restored: in_sync

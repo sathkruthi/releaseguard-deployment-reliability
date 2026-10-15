@@ -1,0 +1,13 @@
+{
+  "errors": [
+    "spec.replicas: production requires 2..3 replicas",
+    "spec.template.spec.containers/app/image: versioned local image required; production requires a digest",
+    "spec.template.spec.containers/app/resources/requests/cpu: required",
+    "spec.template.spec.containers/app/resources/requests/memory: required",
+    "spec.template.spec.containers/app/resources/limits/cpu: required",
+    "spec.template.spec.containers/app/resources/limits/memory: required",
+    "spec.template.spec.containers/app/resources: unsupported or missing resource quantity"
+  ],
+  "rollback_performed": false,
+  "state": "rejected_configuration"
+}

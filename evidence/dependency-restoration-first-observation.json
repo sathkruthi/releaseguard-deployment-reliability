@@ -1,0 +1,161 @@
+{
+  "baseline_error": null,
+  "decision": {
+    "reason": "no changed app revision with a verified healthy baseline",
+    "rollback": false,
+    "state": "unattributed_degradation"
+  },
+  "deployment_fingerprint": "480226dbb9bcb0f94235b84b54f44f47c83d40def32e7c96fdbf0f583f19bc70",
+  "evidence": {
+    "baseline_healthy": true,
+    "candidate_ready": true,
+    "changed": false,
+    "counter_reset": false,
+    "dependency_healthy": true,
+    "error_rate": 0.05714285714285714,
+    "metrics_available": true,
+    "p95_seconds": 1.0,
+    "requests": 35.0,
+    "rollout_ready": true
+  },
+  "helm_revision": 6,
+  "identity": {
+    "container": "releaseguard-control-plane",
+    "container_id": "3a832f135db3dcc652a232efc5ce8f36a5edc404813bf27c204188eda4b25fb6",
+    "context": "kind-releaseguard",
+    "server": "https://127.0.0.1:40497"
+  },
+  "image_revision": "v1",
+  "observation": {
+    "after": {
+      "at": 1792057242.8055387,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 315.0,
+        "10.244.0.7:8080|0.005": 311.0,
+        "10.244.0.7:8080|0.01": 311.0,
+        "10.244.0.7:8080|0.025": 311.0,
+        "10.244.0.7:8080|0.05": 311.0,
+        "10.244.0.7:8080|0.1": 311.0,
+        "10.244.0.7:8080|0.25": 311.0,
+        "10.244.0.7:8080|0.5": 311.0,
+        "10.244.0.7:8080|1": 315.0,
+        "10.244.0.7:8080|2": 315.0,
+        "10.244.0.7:8080|5": 315.0
+      },
+      "buckets": {
+        "+Inf": 315.0,
+        "0.005": 311.0,
+        "0.01": 311.0,
+        "0.025": 311.0,
+        "0.05": 311.0,
+        "0.1": 311.0,
+        "0.25": 311.0,
+        "0.5": 311.0,
+        "1": 315.0,
+        "2": 315.0,
+        "5": 315.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 37.0,
+        "revision": 0.0,
+        "success": 278.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 37.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 278.0
+      }
+    },
+    "before": {
+      "at": 1792057238.3645315,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 280.0,
+        "10.244.0.7:8080|0.005": 278.0,
+        "10.244.0.7:8080|0.01": 278.0,
+        "10.244.0.7:8080|0.025": 278.0,
+        "10.244.0.7:8080|0.05": 278.0,
+        "10.244.0.7:8080|0.1": 278.0,
+        "10.244.0.7:8080|0.25": 278.0,
+        "10.244.0.7:8080|0.5": 278.0,
+        "10.244.0.7:8080|1": 280.0,
+        "10.244.0.7:8080|2": 280.0,
+        "10.244.0.7:8080|5": 280.0
+      },
+      "buckets": {
+        "+Inf": 280.0,
+        "0.005": 278.0,
+        "0.01": 278.0,
+        "0.025": 278.0,
+        "0.05": 278.0,
+        "0.1": 278.0,
+        "0.25": 278.0,
+        "0.5": 278.0,
+        "1": 280.0,
+        "2": 280.0,
+        "5": 280.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 35.0,
+        "revision": 0.0,
+        "success": 245.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 35.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 245.0
+      }
+    },
+    "delta": {
+      "counter_reset": false,
+      "error_rate": 0.05714285714285714,
+      "outcomes": {
+        "dependency": 2.0,
+        "revision": 0.0,
+        "success": 33.0
+      },
+      "p95_seconds": 1.0,
+      "requests": 35.0
+    },
+    "responses": [
+      503,
+      503,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "state": "unattributed_degradation",
+  "telemetry_error": null
+}

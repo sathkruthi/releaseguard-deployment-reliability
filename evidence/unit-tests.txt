@@ -1,0 +1,24 @@
+test_exact_local_target_only (test_cluster.TargetTests.test_exact_local_target_only) ... ok
+test_same_name_does_not_imply_ownership (test_cluster.TargetTests.test_same_name_does_not_imply_ownership) ... ok
+test_formats_and_schema (test_config.ConfigTests.test_formats_and_schema) ... ok
+test_incident001_unsafe_production_manifest (test_config.ConfigTests.test_incident001_unsafe_production_manifest) ... ok
+test_nonfinite_policy_rejected (test_config.ConfigTests.test_nonfinite_policy_rejected) ... ok
+test_rejected_manifest_cannot_upgrade (test_config.ConfigTests.test_rejected_manifest_cannot_upgrade) ... ok
+test_resource_and_drift_semantics (test_config.ConfigTests.test_resource_and_drift_semantics) ... ok
+test_valid_and_malformed_shapes (test_config.ConfigTests.test_valid_and_malformed_shapes) ... ok
+test_command_success_does_not_prove_recovery (test_controller.RecoveryTests.test_command_success_does_not_prove_recovery) ... ok
+test_failed_rollback_is_reported_as_uncertain (test_controller.RecoveryTests.test_failed_rollback_is_reported_as_uncertain) ... ok
+test_remote_override_is_rejected_before_any_command (test_docker_environment.DockerEnvironmentTests.test_remote_override_is_rejected_before_any_command) ... ok
+test_instance_reset_cannot_hide_in_increasing_aggregate (test_metrics.MetricTests.test_instance_reset_cannot_hide_in_increasing_aggregate) ... ok
+test_reset_and_infinite_bucket_are_inconclusive (test_metrics.MetricTests.test_reset_and_infinite_bucket_are_inconclusive) ... ok
+test_window_and_bucket_quantile (test_metrics.MetricTests.test_window_and_bucket_quantile) ... ok
+test_health_and_sample_boundary (test_policy.DecisionTests.test_health_and_sample_boundary) ... ok
+test_incident003_dependency_does_not_rollback (test_policy.DecisionTests.test_incident003_dependency_does_not_rollback) ... ok
+test_missing_and_mixed_evidence (test_policy.DecisionTests.test_missing_and_mixed_evidence) ... ok
+test_no_baseline_or_revision_cannot_authorize_rollback (test_policy.DecisionTests.test_no_baseline_or_revision_cannot_authorize_rollback) ... ok
+test_readiness_and_slo_regressions (test_policy.DecisionTests.test_readiness_and_slo_regressions) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.071s
+
+OK

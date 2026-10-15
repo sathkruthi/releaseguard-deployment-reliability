@@ -1,0 +1,4 @@
+.local/bin/kind: OK
+.local/bin/kubectl: OK
+.local/helm.tar.gz: OK
+Tools saved in .local/bin. Run: export PATH="$PWD/.local/bin:$PATH"

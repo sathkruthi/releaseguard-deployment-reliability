@@ -1,0 +1,6 @@
+apiVersion: v2
+name: releaseguard-sample
+description: Synthetic local workload for deployment reliability exercises
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

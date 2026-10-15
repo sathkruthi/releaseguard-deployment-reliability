@@ -1,0 +1,6 @@
+test_incident001_unsafe_production_manifest (test_config.ConfigTests.test_incident001_unsafe_production_manifest) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK

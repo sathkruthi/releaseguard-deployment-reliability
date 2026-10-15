@@ -1,0 +1,163 @@
+{
+  "baseline_error": null,
+  "decision": {
+    "reason": "external dependency unhealthy; app rollback has no demonstrated benefit",
+    "rollback": false,
+    "state": "degraded_external_dependency"
+  },
+  "deployment_fingerprint": "480226dbb9bcb0f94235b84b54f44f47c83d40def32e7c96fdbf0f583f19bc70",
+  "evidence": {
+    "baseline_healthy": true,
+    "candidate_ready": true,
+    "changed": false,
+    "counter_reset": false,
+    "dependency_healthy": false,
+    "error_rate": 1.0,
+    "metrics_available": true,
+    "p95_seconds": 1.0,
+    "requests": 35.0,
+    "rollout_ready": true
+  },
+  "helm_revision": 9,
+  "helm_revision_after": 9,
+  "identity": {
+    "container": "releaseguard-control-plane",
+    "container_id": "3a832f135db3dcc652a232efc5ce8f36a5edc404813bf27c204188eda4b25fb6",
+    "context": "kind-releaseguard",
+    "server": "https://127.0.0.1:40497"
+  },
+  "image_revision": "v1",
+  "observation": {
+    "after": {
+      "at": 1792057323.0026383,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 490.0,
+        "10.244.0.7:8080|0.005": 484.0,
+        "10.244.0.7:8080|0.01": 484.0,
+        "10.244.0.7:8080|0.025": 484.0,
+        "10.244.0.7:8080|0.05": 484.0,
+        "10.244.0.7:8080|0.1": 484.0,
+        "10.244.0.7:8080|0.25": 484.0,
+        "10.244.0.7:8080|0.5": 484.0,
+        "10.244.0.7:8080|1": 490.0,
+        "10.244.0.7:8080|2": 490.0,
+        "10.244.0.7:8080|5": 490.0
+      },
+      "buckets": {
+        "+Inf": 490.0,
+        "0.005": 484.0,
+        "0.01": 484.0,
+        "0.025": 484.0,
+        "0.05": 484.0,
+        "0.1": 484.0,
+        "0.25": 484.0,
+        "0.5": 484.0,
+        "1": 490.0,
+        "2": 490.0,
+        "5": 490.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 72.0,
+        "revision": 0.0,
+        "success": 418.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 72.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 418.0
+      }
+    },
+    "before": {
+      "at": 1792057318.559895,
+      "bucket_series": {
+        "10.244.0.7:8080|+Inf": 455.0,
+        "10.244.0.7:8080|0.005": 451.0,
+        "10.244.0.7:8080|0.01": 451.0,
+        "10.244.0.7:8080|0.025": 451.0,
+        "10.244.0.7:8080|0.05": 451.0,
+        "10.244.0.7:8080|0.1": 451.0,
+        "10.244.0.7:8080|0.25": 451.0,
+        "10.244.0.7:8080|0.5": 451.0,
+        "10.244.0.7:8080|1": 455.0,
+        "10.244.0.7:8080|2": 455.0,
+        "10.244.0.7:8080|5": 455.0
+      },
+      "buckets": {
+        "+Inf": 455.0,
+        "0.005": 451.0,
+        "0.01": 451.0,
+        "0.025": 451.0,
+        "0.05": 451.0,
+        "0.1": 451.0,
+        "0.25": 451.0,
+        "0.5": 451.0,
+        "1": 455.0,
+        "2": 455.0,
+        "5": 455.0
+      },
+      "ready": true,
+      "requests": {
+        "dependency": 37.0,
+        "revision": 0.0,
+        "success": 418.0
+      },
+      "series": {
+        "10.244.0.7:8080|dependency": 37.0,
+        "10.244.0.7:8080|revision": 0.0,
+        "10.244.0.7:8080|success": 418.0
+      }
+    },
+    "delta": {
+      "counter_reset": false,
+      "error_rate": 1.0,
+      "outcomes": {
+        "dependency": 35.0,
+        "revision": 0.0,
+        "success": 0.0
+      },
+      "p95_seconds": 1.0,
+      "requests": 35.0
+    },
+    "responses": [
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503,
+      503
+    ]
+  },
+  "rollback_performed": false,
+  "state": "degraded_external_dependency",
+  "telemetry_error": null
+}

@@ -1,0 +1,6 @@
+test_incident003_dependency_does_not_rollback (test_policy.DecisionTests.test_incident003_dependency_does_not_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
