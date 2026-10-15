@@ -64,6 +64,12 @@ The incident command reruns the complete bounded integration suite, restores its
 
 See [captured reports](evidence/summary.json) and [test strategy](docs/testing.md). These are finite local observations, not universal correctness or performance guarantees.
 
+## Running-system evidence
+
+![Actual local Prometheus query after the incident exercises](docs/prometheus-live.png)
+
+Captured from the real local Prometheus UI on 2026-10-15. The query summarizes 30-minute request increases by revision/outcome. Prometheus `increase` extrapolates at range boundaries, so fractional values are estimates; use the incident JSON counter deltas for exact observed-window counts. v2 receives no service work while unready, while v1 records actual dependency failures and v3 records successful but slow requests. This screenshot is not a benchmark or a production dashboard.
+
 ## Why this design
 
 A single kind node provides genuine Kubernetes scheduling and rollout behavior without cloud infrastructure. Helm preserves a concrete prior manifest. Prometheus scrapes unready pods through headless discovery so a readiness failure remains observable even when the service routes work to the old healthy pod. A zero-unavailable rolling strategy preserves that old pod during the defective rollout.
